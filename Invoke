@@ -1,0 +1,21 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class FonksiyonManager : MonoBehavior 
+{
+    public GameObject cubePrefab ; 
+
+    private void Start()
+
+    {
+        Invoke("makecube" , 2f);
+
+        //Instantiate(cubePrefab,transform.position,Quaternion.identity);
+    }
+
+    private void makecube()
+    {
+        Instantiate(cubePrefab,transform.position,Quaternion.identity);
+    }
+}
