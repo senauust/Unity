@@ -1,0 +1,28 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class FonksiyonManager : MonoBehavior 
+{
+    [SerializeField]
+
+    private GameObject cube;
+
+    private void Start ()
+    {
+        StartCoroutine(TurnOfVısıbılıty));
+    }
+
+    IEnumerator TurnOfVısıbılıty ()
+
+    {
+        //yield return null (works after 1 frames  )
+        yield return new WaitForSeconds(3f);
+
+        cube.SetActive(false);
+        
+        yield return new WaitForSeconds(2f);
+        cube.SetActive(false);
+    }
+
+}
