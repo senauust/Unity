@@ -6,6 +6,13 @@ public class MathManager : MonoBehavior
 {
     private void Start ()
     {
-        Debug.Log(Mathf.Floor(20.2f));
+        //Gets an integer
+        //Debug.Log(Mathf.Floor(20.2f));
+
+        //Rounds to the next number 
+        //Debug.Log(Mathf.Ceil(10.3f));
+
+        //Rounds to the next number
+        Debug.Log(Mathf.Round(10.6f));
     }
 }
