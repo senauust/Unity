@@ -1,0 +1,11 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class MathManager : MonoBehavior 
+{
+    private void Start ()
+    {
+        Debug.Log(Mathf.Floor(20.2f));
+    }
+}
