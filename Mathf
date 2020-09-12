@@ -1,0 +1,15 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class MathManager : MonoBehavior 
+{
+    float a =0f;
+    float b =100f;
+
+    private void Update()
+    {
+        a = Mathf.Lerp(a,b,0.5f);
+        Debug.Log(a);
+    }
+}
