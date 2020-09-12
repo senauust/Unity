@@ -1,0 +1,16 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class MathManager : MonoBehavior 
+{
+    float minAngle = 0.0f;
+    float maxAngle = 90.0f:
+
+    private void Update()
+    {
+        float angle = Mathf.LerpAngle(minAngle, maxAngle, Time.time);
+
+        transform.eulerAngles = new Vector3(angle, 0 , 0);
+    }
+}
