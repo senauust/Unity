@@ -1,0 +1,22 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+[System.Serializable]
+
+public class CustomerClass 
+{
+    public string name;
+    public string surname;
+    public int identificationnumber;
+    public string hometown;
+
+    public CustomerClass(string name,string surname,int number,string hometown)
+    {
+        this.name = name;
+        this.surname = surname;
+        this.identificationnumber = number;
+        this.hometown = hometown ;      
+    }
+
+}
